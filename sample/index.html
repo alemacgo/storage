@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Variant HTML Builder by Medium Rare</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+				
+		<div class="nav-container">
+		</div>
+		
+		<div class="main-container">
+		<section class="cover fullscreen image-slider slider-all-controls">
+		        <ul class="slides">
+		            <li class="image-bg overlay">
+		                <div class="background-image-holder">
+		                    <img alt="Background Image" class="background-image" src="content/placeholder01-frame1.png">
+		                </div>
+		                <div class="container v-align-transform">
+		                    <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="lead mb48 mb-xs-32">
+                                        This is text that flushes to the left. A key feature of abakino Live is "explanation rewriting", which works as follows. Let's assume a student watches a video lecture on circles, then is evaluated on his understanding of that lecture with an assessment test that asks a question about finding the sector area of a circle. 
+                                    </p>
+                                </div>
+		                    </div>
+		                </div>
+		            </li>
+
+                    <!-- Slide 1: left text with video -->
+		            <li class="vid-bg image-bg overlay">
+		                <div class="background-image-holder">
+		                    <img alt="Background Image" class="background-image" src="https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&amp;fm=jpg&amp;w=1080&amp;fit=max&amp;s=9e4ce3e023621d6f94259eea8fa3b856">
+		                </div>
+		                <div class="fs-vid-background">
+		                    <video muted="" controls="controls">
+		                        <source src="content/placeholder01.mp4" type="video/mp4">
+		                    </video>
+		                </div>
+		                <div class="container v-align-transform">
+		                    <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="lead mb48 mb-xs-32">
+                                        <!-- Text over the video can go below this line -->
+                                    </p>
+                                </div>
+		                    </div>
+		                </div>
+                        <div class="playpause"></div>
+		            </li>
+                    <!-- End Slide 1 -->
+
+                    <!-- Slide 2: right text with video -->
+		            <li class="vid-bg image-bg overlay">
+		                <div class="background-image-holder">
+		                    <img alt="Background Image" class="background-image" src="https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&amp;fm=jpg&amp;w=1080&amp;fit=max&amp;s=9e4ce3e023621d6f94259eea8fa3b856">
+		                </div>
+		                <div class="fs-vid-background">
+		                    <video muted="" controls="controls">
+		                        <source src="content/placeholder02.mp4" type="video/mp4">
+		                    </video>
+		                </div>
+		                <div class="container v-align-transform">
+		                    <div class="row">
+                                <div class="col-md-6 col-md-offset-6 col-sm-12">
+                                    <p class="lead mb48 mb-xs-32">
+                                        This is text that flushes to the right. In the online tutoring stage, the same question about sector area is taught on the same user interface, with the tutor using a whiteboard canvas to explain the question in a different way. This new explanation is also audiovisual in nature, just like the original explanation "video", as it combines the audio of the tutor speaking with the moving image of the tutor handwriting text and handdrawing shapes on the whiteboard.
+                                    </p>
+                                </div>
+		                    </div>
+		                </div>
+                        <div class="playpause"></div>
+		            </li>
+                    <!-- End Slide 2 -->
+
+                    <!-- Slide 3: left text with image -->
+		            <li class="image-bg overlay">
+		                <div class="background-image-holder">
+		                    <img alt="Background Image" class="background-image" src="content/placeholder03.jpg">
+		                </div>
+		                <div class="container v-align-transform">
+		                    <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="lead mb48 mb-xs-32">
+                                        This is an example of a static slide. Instead of video, we can use static images as a background too.
+                                    </p>
+                                </div>
+		                    </div>
+		                </div>
+		            </li>
+                    <!-- End Slide 3 -->
+                    
+                    <!-- Slide 4: right text with image -->
+                    <li class="image-bg overlay fade-slide">
+		                <div class="background-image-holder">
+		                    <img alt="Background Image" class="background-image" src="content/placeholder04.jpg">
+		                </div>
+		                <div class="container v-align-transform">
+		                    <div class="row">
+                                <div class="col-md-6 col-md-offset-6 col-sm-12">
+                                    <p class="lead mb48 mb-xs-32">
+                                        This is text that flushes to the right. This is an example of a static slide. Instead of video, we can use static images as a background too.
+                                    </p>
+                                </div>
+		                    </div>
+		                </div>
+		            </li>
+                    <!-- End Slide 4 -->
+
+		        </ul>
+		    </section>
+		</div>
+	<script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/flexslider.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
+        <script>
+            $(".playpause").fadeOut();
+            $("li").click(function() {
+                $(this).find("video").each(function(){
+                    if ($(this).get(0).paused) {
+                        $(this).get(0).play();
+                        $(".playpause").fadeOut();
+                    }
+                    else {
+                        $(this).get(0).pause();
+                        $(".playpause").fadeIn();
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
